@@ -24,7 +24,7 @@ namespace FriendlyFireAutoBan_EXILED
 
         public void OnPlayerHurt(ref PlayerHurtEvent ev)
         {
-            if (playerTable[ev.Attacker] == null || playerTable[ev.Player] == null)
+            if (!playerTable.ContainsKey(ev.Attacker) || !playerTable.ContainsKey(ev.Player))
             {
                 Plugin.Error("Player hurt event failed, maybe they just joined?");
                 return;
