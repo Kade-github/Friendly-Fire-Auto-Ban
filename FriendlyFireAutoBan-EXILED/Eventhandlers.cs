@@ -1,4 +1,4 @@
-﻿using EXILED;
+using EXILED;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +24,12 @@ namespace FriendlyFireAutoBan_EXILED
 
         public void OnPlayerHurt(ref PlayerHurtEvent ev)
         {
+            if (playerTable[ev.Attacker] == null || playerTable[ev.Player] == null)
+            {
+                Plugin.Error("Player hurt event failed, maybe they just joined?");
+                return;
+            }
+
             if (ev.Attacker == null || ev.Player == null)
                 return;
             if (!ev.Player.characterClassManager.isClient || !ev.Attacker.characterClassManager.isClient)
