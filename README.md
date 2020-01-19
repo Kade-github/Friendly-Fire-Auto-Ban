@@ -1,2 +1,8 @@
-# -SL-EXILED-Friendly-Fire-Auto-Ban
-A Friendly Fire Auto Ban (FFAB for short) plugin for EXILED!
+# Friendly Fire Auto Ban
+A plugin for Exiled, which auto bans people who do enough damage to warrent it.
+
+## Configuration
+| Config                | Description     | Default Value  |
+|:---------------------:|:---------------:|:--------------:|
+| ffab_banMins          | Ban Minutes     | 120            |
+| ffab_damageThreshold  | How much damage | 450            |
