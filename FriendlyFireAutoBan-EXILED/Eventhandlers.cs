@@ -38,7 +38,7 @@ namespace FriendlyFireAutoBan_EXILED
             Team attackerT = Plugin.GetTeam(ev.Attacker.characterClassManager.CurClass);
             Team attackedT = Plugin.GetTeam(ev.Player.characterClassManager.CurClass);
 
-            if (attackedT == attackerT)
+            if (attackedT == attackerT && ev.Attacker != ev.Player)
             {
                 if (playerTable[ev.Attacker] >= damageThreshold)
                     GameCore.Console.singleton.TypeCommand($"/ban " + ev.Attacker.queryProcessor.PlayerId + " " + banMins, new FFABSender());
