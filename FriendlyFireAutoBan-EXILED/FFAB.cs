@@ -13,7 +13,7 @@ namespace FriendlyFireAutoBan_EXILED
 
         public override string getName => "FFAB";
 
-        private string version = "1.0b";
+        private string version = "2.0b";
 
         public override void OnDisable()
         {
