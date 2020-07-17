@@ -10,6 +10,9 @@ A plugin for Exiled, which auto bans people who do enough damage to warrent it.
 
 **Step 4:** Profit?!?!?!?!
 
+## Support 100% dropped
+this feature is in the base game now. and also according to one guy its complete crap, I think hes big baby rager though. :)
+
 ## Configuration
 | Config                | Description     | Default Value  |
 |:---------------------:|:---------------:|:--------------:|
